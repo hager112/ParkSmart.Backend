@@ -33,14 +33,17 @@ Swagger UI is available when the application is running.
 Author
 Hager Sayed
 
-Architecture Diagram
-flowchart TD
-    React[React Frontend] --> API[ParkSmart.API]
-    API --> Application[ParkSmart.Application]
-    Application --> Domain[ParkSmart.Domain]
-    Application --> Infrastructure[ParkSmart.Infrastructure]
-    Infrastructure --> DB[(SQL Database)]
+## Architecture Diagram
 
-    Domain --> ParkingArea[ParkingArea]
-    Domain --> ParkingSpot[ParkingSpot]
-    Domain --> ParkingSession[ParkingSession]
+```mermaid
+flowchart TD
+React[React Frontend] --> API[ParkSmart.API]
+API --> Application[ParkSmart.Application]
+Application --> Domain[ParkSmart.Domain]
+Application --> Infrastructure[ParkSmart.Infrastructure]
+Infrastructure --> DB[(SQL Database)]
+
+Domain --> ParkingArea[ParkingArea]
+Domain --> ParkingSpot[ParkingSpot]
+Domain --> ParkingSession[ParkingSession]
+```
